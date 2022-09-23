@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>line-height如何继承 | 前端足迹</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/logo.png">
+    <meta name="description" content="前端足迹,记录技术点">
+    
+    <link rel="preload" href="/assets/css/0.styles.d7364b82.css" as="style"><link rel="preload" href="/assets/js/app.18ef9056.js" as="script"><link rel="preload" href="/assets/js/2.87c18c56.js" as="script"><link rel="preload" href="/assets/js/10.37915663.js" as="script"><link rel="prefetch" href="/assets/js/11.ea0f1fa5.js"><link rel="prefetch" href="/assets/js/12.6874d6de.js"><link rel="prefetch" href="/assets/js/13.e3c1f27a.js"><link rel="prefetch" href="/assets/js/14.cb131d14.js"><link rel="prefetch" href="/assets/js/15.ee1a9683.js"><link rel="prefetch" href="/assets/js/16.1e712352.js"><link rel="prefetch" href="/assets/js/17.8ca8276b.js"><link rel="prefetch" href="/assets/js/18.1741cfd5.js"><link rel="prefetch" href="/assets/js/19.8932f34d.js"><link rel="prefetch" href="/assets/js/3.cae9bf9a.js"><link rel="prefetch" href="/assets/js/4.d9db3c28.js"><link rel="prefetch" href="/assets/js/5.b6e4b8e2.js"><link rel="prefetch" href="/assets/js/6.a2720c1c.js"><link rel="prefetch" href="/assets/js/7.4db9806a.js"><link rel="prefetch" href="/assets/js/8.fd0c911c.js"><link rel="prefetch" href="/assets/js/9.ac3d5985.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.d7364b82.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/logo.png" alt="前端足迹" class="logo"> <span class="site-name can-hide">前端足迹</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="分类" class="dropdown-title"><span class="title">分类</span> <span class="arrow down"></span></button> <button type="button" aria-label="分类" class="mobile-dropdown-title"><span class="title">分类</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/articles/javascript/async.html" class="nav-link">
+  文章
+</a></li><li class="dropdown-item"><!----> <a href="/projects/hemy-progress.html" class="nav-link">
+  项目
+</a></li></ul></div></div><div class="nav-item"><a href="https://github.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="分类" class="dropdown-title"><span class="title">分类</span> <span class="arrow down"></span></button> <button type="button" aria-label="分类" class="mobile-dropdown-title"><span class="title">分类</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/articles/javascript/async.html" class="nav-link">
+  文章
+</a></li><li class="dropdown-item"><!----> <a href="/projects/hemy-progress.html" class="nav-link">
+  项目
+</a></li></ul></div></div><div class="nav-item"><a href="https://github.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>javascript</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>css</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/articles/css/BFC.html" class="sidebar-link">BFC</a></li><li><a href="/articles/css/实现水平垂直居中的布局.html" class="sidebar-link">实现水平垂直居中的布局</a></li><li><a href="/articles/css/实现两栏布局.html" class="sidebar-link">实现两栏布局</a></li><li><a href="/articles/css/css面试题.html" class="active sidebar-link">css面试题</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/articles/css/css面试题.html#line-height如何继承" class="sidebar-link">line-height如何继承</a></li><li class="sidebar-sub-header"><a href="/articles/css/css面试题.html#元素隐藏" class="sidebar-link">元素隐藏</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="line-height如何继承"><a href="#line-height如何继承" class="header-anchor">#</a> line-height如何继承</h2> <ul><li>父元素的line-height写了具体数值,比如30px,则子元素line-height继承该值</li> <li>父元素的line-height写了比例,比如1.5或2,则子元素line-height也是继承该比例</li> <li>父元素的line-height写了百分比,比如200%,则子元素line-height继承的是父元素font-size*200%计算出来的值</li></ul> <h2 id="元素隐藏"><a href="#元素隐藏" class="header-anchor">#</a> 元素隐藏</h2> <p>display:none,visibility:hidden,opacity:0之间的区别</p> <div class="language-html line-numbers-mode"><pre class="language-html"><code>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>father<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>child<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">&gt;</span></span><span class="token style"><span class="token language-css">
+    <span class="token selector">.father</span> <span class="token punctuation">{</span>
+      <span class="token property">width</span><span class="token punctuation">:</span> 200px<span class="token punctuation">;</span>
+      <span class="token property">height</span><span class="token punctuation">:</span> 200px<span class="token punctuation">;</span>
+      <span class="token property">background-color</span><span class="token punctuation">:</span> aqua<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token selector">.child</span> <span class="token punctuation">{</span>
+      <span class="token property">width</span><span class="token punctuation">:</span> 100px<span class="token punctuation">;</span>
+      <span class="token property">height</span><span class="token punctuation">:</span> 100px<span class="token punctuation">;</span>
+      <span class="token property">background-color</span><span class="token punctuation">:</span> brown<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token comment">/* 
+    是否占据空间
+      display:none 隐藏之后不会占位置
+      visibility:hidden和opacity:0仍占据位置
+      
+    子元素是否继承:
+      display:none--不会被子元素继承,父元素不显示,子元素也不会显示
+      visibility:hidden--会被子元素继承,可以通过设置visibility:visible来显示子元素
+      opacity:0--会被子元素继承,但是不能设置opacity:0来重新显示
+
+    事件绑定:
+      display:none和visibility:hidden不会触发绑定的事件
+      opacity:0会触发
+
+    过度动画:
+      transition对于display和visibility是无效的
+      transition对opacity是有效
+    */</span>
+
+    <span class="token comment">/* .father {
+      display: none;
+    } */</span>
+
+    <span class="token comment">/* .father {
+      visibility: hidden;
+    }
+    .child {
+      visibility: visible;
+    } */</span>
+
+    <span class="token comment">/* .father {
+      opacity: 0;
+    }
+    .child {
+      opacity: 1;
+    } */</span>
+  </span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+    <span class="token keyword">const</span> div <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementsByClassName</span><span class="token punctuation">(</span><span class="token string">'father'</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    div<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">'click'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'111'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  </span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br></div></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/articles/css/实现两栏布局.html" class="prev">
+        实现两栏布局
+      </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.18ef9056.js" defer></script><script src="/assets/js/2.87c18c56.js" defer></script><script src="/assets/js/10.37915663.js" defer></script>
+  </body>
+</html>
